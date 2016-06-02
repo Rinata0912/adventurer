@@ -1,0 +1,65 @@
+.banner
+    background url('../images/banner.jpg') no-repeat
+    background-size cover
+    text-align center
+    padding-top 266px
+    padding-bottom 266px
+    &__title
+        color white
+        font-size 90px
+        font-weight 700
+        font-family OpenSans
+        margin-bottom 34px
+        &_small
+            font-size 79px
+            font-variant small-caps
+            margin-bottom 76px
+    &__subtitle
+        color white
+        font-family OpenSans
+        font-size 14px
+        font-weight 600
+        margin-bottom 86px
+        &_big
+            font-size 24px
+            font-variant small-caps
+            margin-bottom 30px
+    &__container
+        position relative
+    &__arrow-left
+        background-color rgba(255,255,255, .87)
+        width 60px
+        height 60px
+        border-radius 50%
+        position absolute
+        top 50%
+        transform translateY(-50%)
+        left -50px
+        cursor pointer
+        z-index 1
+        transition .3s
+    &__arrow-icon
+        width 15px
+        height 28px
+        color rgba(0,0,0, .68)
+        position absolute
+        top 50%
+        left 50%
+        transform translate(-50%, -50%)
+        transition .3s
+    &__arrow-right
+        background-color rgba(255,255,255, .87)
+        width 60px
+        height 60px
+        border-radius 50%
+        position absolute
+        top 50%
+        transform translateY(-50%) scaleX(-1)
+        right -50px
+        cursor pointer
+        transition .3s
+    .slick-disabled
+        background-color rgba(0,0,0, .31)
+        cursor auto
+        .banner__arrow-icon
+            color rgba(255,255,255, .31)

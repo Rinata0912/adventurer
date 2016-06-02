@@ -1,0 +1,10 @@
+include ../icon/icon
+
+mixin offers-block(data)
+    -data= data || {}
+    +b.offers-block
+        +e.icon-container
+            +icon(data.icon).icon
+        +e.content
+            +e.title= data.title
+            +e.text= data.text

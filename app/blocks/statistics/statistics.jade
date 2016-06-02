@@ -1,0 +1,11 @@
+include ../wrap/wrap
+include ../statistics-block/statistics-block
+
+mixin statistics()
+	+b.statistics&attributes(attributes)
+		+wrap()
+			+e.content
+				+statistics-block({icon: 'heart', num: '10K+', text: 'Love Our Team'})
+				+statistics-block({icon: 'check', num: '10K+', text: 'Love Our Team'})
+				+statistics-block({icon: 'repeat', num: '10K+', text: 'Love Our Team'})
+				+statistics-block({icon: 'beer', num: '10K+', text: 'Love Our Team'})

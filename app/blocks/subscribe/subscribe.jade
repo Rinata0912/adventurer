@@ -1,0 +1,12 @@
+include ../icon/icon
+include ../wrap/wrap
+
+mixin subscribe()
+	+b.subscribe&attributes(attributes)
+		+wrap()
+			+e.container
+				+e.text Subscribe to our newsletter to get every Notify
+				+e.input-container
+					+e('input').input(type='text' placeholder='Your email')
+					+e.button
+						+icon('telegram').icon

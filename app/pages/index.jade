@@ -1,8 +1,34 @@
 extends /blocks/layout-default/layout-default
 include /blocks/header/header
+include /blocks/banner/banner
+include /blocks/who/who
+include /blocks/service/service
+include /blocks/join/join
+include /blocks/offers/offers
+include /blocks/reviews/reviews
+include /blocks/statistics/statistics
+include /blocks/team/team
+include /blocks/works/works
+include /blocks/portfolio/portfolio
+include /blocks/subscribe/subscribe
+include /blocks/footer/footer
+include /blocks/bottom/bottom
 
 block head
 	- var pageTitle = 'CSSSR Project Template';
 
 block content
 	+header()
+	+banner()
+	+who()
+	+service()
+	+join()
+	+offers()
+	+reviews()
+	+statistics()
+	+team()
+	+works()
+	+portfolio()
+	+subscribe()
+	+footer()
+	+bottom()

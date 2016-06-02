@@ -1,0 +1,24 @@
+include ../wrap/wrap
+include ../icon/icon
+
+mixin bottom()
+	+b.bottom&attributes(attributes)
+		+wrap()
+			+e.container
+				+e.copyright  © 2015 LORAN KHA. All Rights Reserved.
+					+e('a').link(href='#') Ehsanul
+				+e.social
+					+e('a').social-link(href='#')
+						+icon('facebook').icon
+					+e('a').social-link(href='#')
+						+icon('twitter-link').icon
+					+e('a').social-link(href='#')
+						+icon('vimeo').icon
+					+e('a').social-link(href='#')
+						+icon('pinterest-link').icon
+					+e('a').social-link(href='#')
+						+icon('linkedin').icon
+					+e('a').social-link(href='#')
+						+icon('dribbble-link').icon
+					+e('a').social-link(href='#')
+						+icon('google-plus').icon

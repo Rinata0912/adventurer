@@ -1,0 +1,11 @@
+include ../button/button
+include ../icon/icon
+
+mixin block(data)
+    -data= data || {}
+    +b.item
+        +icon(data.icon).logo
+        +e.title= data.title
+        +e.text= data.text
+        +e.button
+            +button({text: 'See  More'})

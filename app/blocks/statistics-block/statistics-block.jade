@@ -1,0 +1,7 @@
+include ../icon/icon
+
+mixin statistics-block(data)
+	+b.statistics-block&attributes(attributes)
+		+icon(data.icon).icon
+		+e.num= data.num
+		+e.text= data.text

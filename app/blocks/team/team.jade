@@ -1,0 +1,14 @@
+include ../title/title
+include ../wrap/wrap
+include ../team-item/team-item
+
+mixin team()
+	+b.team&attributes(attributes)
+		+wrap()
+			+title({text: 'Meet Our Team'})
+			+e.text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum. Suspendisse cursus malesuada facilisis.Lorem ipsum dolor sit amet, consectetur facilisis.
+			+e.list
+				+team-item({photo: 'photo1', name: 'Mahabubul Islam', post: 'Html-Coder'})
+				+team-item({photo: 'photo1', name: 'Mahabubul Islam', post: 'Html-Coder'})
+				+team-item({photo: 'photo1', name: 'Mahabubul Islam', post: 'Html-Coder'})
+				+team-item({photo: 'photo1', name: 'Mahabubul Islam', post: 'Html-Coder'})

@@ -1,0 +1,13 @@
+include ../button/button
+include ../wrap/wrap
+mixin banner()
+    +b.banner
+        +wrap()
+            +e.container
+                +e.slide
+                    +e.title ADVENTURER
+                    +e.subtitle MURI, A TEMPLATE AT THE HEART OF THE BEAUTY
+                +e.slide
+                    +e.subtitle._big web development / creative agency / professional photography
+                    +e.title._small bigbest one page ever built
+            +button({text: 'See More'})

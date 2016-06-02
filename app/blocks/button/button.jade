@@ -1,0 +1,4 @@
+mixin button(data)
+    -data = data || {}
+    +b('a').button(href=data.link || '#')= data.text
+        

@@ -1,0 +1,22 @@
+include ../wrap/wrap
+include ../title/title
+include ../works-item/works-item
+
+mixin works()
+	+b.works&attributes(attributes)
+		+wrap()
+			+title({text: 'Our Awesome Works'})
+			+e.text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum. Suspendisse cursus malesuada facilisis.Lorem ipsum dolor sit amet, consectetur facilisis.
+			+e.links
+				+e.link(data-filter='all' class='filter') All
+				+e.link(data-filter='.photography' class='filter') Photography
+				+e.link(data-filter='.graphic' class='filter') Graphic
+				+e.link(data-filter='.print' class='filter') Print
+				+e.link(data-filter='.web' class='filter') Web
+			+e.list
+				+works-item({img: 'img1', name: 'Our Work Image 01', text: 'Lorem ipsum dolor sit amet, consectetur'}).mix.photography
+				+works-item({img: 'img2', name: 'Our Work Image 01', text: 'Lorem ipsum dolor sit amet, consectetur'}).mix.graphic
+				+works-item({img: 'img3', name: 'Our Work Image 01', text: 'Lorem ipsum dolor sit amet, consectetur'}).mix.graphic
+				+works-item({img: 'img4', name: 'Our Work Image 01', text: 'Lorem ipsum dolor sit amet, consectetur'}).mix.print
+				+works-item({img: 'img5', name: 'Our Work Image 01', text: 'Lorem ipsum dolor sit amet, consectetur'}).mix.print
+				+works-item({img: 'img6', name: 'Our Work Image 01', text: 'Lorem ipsum dolor sit amet, consectetur'}).mix.web

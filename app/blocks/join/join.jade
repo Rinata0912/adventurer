@@ -1,0 +1,10 @@
+include ../title/title
+include ../button/button
+include ../icon/icon
+
+mixin join()
+    +b.join
+        +icon('user').icon
+        +title({text: 'Join Our Creative company'}).join__title
+        +e.text “ Hello! Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.”
+        +button({text: 'Join with us'})

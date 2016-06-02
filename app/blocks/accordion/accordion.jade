@@ -1,0 +1,8 @@
+mixin accordion(data)
+    -data = data || {}
+    +b.accordion(class= data.active ? 'accordion_state_open' : '')
+        +e.header
+            +e.title= data.title
+            +e.button
+                +e.sign
+        +e.text= data.text

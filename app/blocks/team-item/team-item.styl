@@ -1,0 +1,60 @@
+.team-item
+	position relative
+	display inline-block
+	margin 0 9px
+	width 268px
+	height 300px
+	overflow hidden
+	&:hover
+		.team-item__info
+			display block
+			opacity 1
+			transform translateY(0)
+		&:after
+			opacity 0
+	&:after
+		transition opacity .5s
+		opacity 1
+		background rgba(0,0,0, .5)
+		position absolute
+		top 0
+		bottom 0
+		left 0
+		right 0
+		content ''
+	&__info
+		background rgba(236,72,72, .96)
+		position absolute
+		bottom 0
+		left 0
+		right 0
+		transform translateY(100%)
+		transform-origin bottom
+		opacity 0
+		transition all .5s
+		z-index 100
+	&__name
+		color white
+		font-family RobotoCondensed
+		font-size 25px
+		font-weight 400
+		margin-top 12px
+		margin-bottom 8px
+	&__links
+		margin-bottom 8px
+	&__post
+		color white
+		font-family RobotoCondensed
+		font-size 18px
+		font-weight 400
+		margin-bottom 16px
+	&__icon
+		width 17px
+		height 17px
+	&__link
+		color #fff
+		display inline-block
+		border-bottom 2px solid transparent
+		&:hover
+			color #000
+			border-bottom 2px solid #000

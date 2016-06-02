@@ -1,0 +1,18 @@
+include ../title/title
+include ../reviews-block/reviews-block
+include ../wrap/wrap
+
+mixin reviews()
+    +b.reviews
+        +wrap()
+            +title({text: 'CUSTOMER REVIEWS'})
+            +e.list
+                +e.list-wrap
+                    +reviews-block({avatar: 'avatar1', title: 'Ejazul islam', subtitle: 'Diploma In mati bidda', text: '"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s".......'})
+                    +reviews-block({avatar: 'avatar2', title: 'Ejazul islam', subtitle: 'Diploma In mati bidda', text: '"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s".......'})
+                +e.list-wrap
+                    +reviews-block({avatar: 'avatar1', title: 'Ejazul islam', subtitle: 'Diploma In mati bidda', text: '"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s".......'})
+                    +reviews-block({avatar: 'avatar2', title: 'Ejazul islam', subtitle: 'Diploma In mati bidda', text: '"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s".......'})
+                +e.list-wrap
+                    +reviews-block({avatar: 'avatar1', title: 'Ejazul islam', subtitle: 'Diploma In mati bidda', text: '"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s".......'})
+                    +reviews-block({avatar: 'avatar2', title: 'Ejazul islam', subtitle: 'Diploma In mati bidda', text: '"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s".......'})

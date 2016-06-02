@@ -1,0 +1,24 @@
+include ../accordion/accordion
+include ../title/title
+include ../wrap/wrap
+include ../skills/skills
+
+mixin who()
+    +b.who
+        +wrap()
+            +title({text: 'Who we are'})
+            +e.subtitle Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            +e.content
+                +e.accordions
+                    +accordion({title: 'biba biba biba bibabibabiba', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit repudiandae aliquam sint voluptatem enim deserunt. Repellat dignissimos, dolore consequatur nobis quas voluptatem quod dolor laboriosam, saepe veniam dolores libero? Dicta!'})
+                    +accordion({active: true, title: 'biba biba biba bibabibabiba', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit repudiandae aliquam sint voluptatem enim deserunt. Repellat dignissimos, dolore consequatur nobis quas voluptatem quod dolor laboriosam, saepe veniam dolores libero? Dicta!'})
+                    +accordion({title: 'biba biba biba bibabibabiba', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit repudiandae aliquam sint voluptatem enim deserunt. Repellat dignissimos, dolore consequatur nobis quas voluptatem quod dolor laboriosam, saepe veniam dolores libero? Dicta!'})
+                +e.skills
+                    +skills({items: [
+                        {text: 'Web Design', percent: '80%'},
+                        {text: 'Html and Css', percent: '60%'},
+                        {text: 'Graphic Design', percent: '75%'},
+                        {text: 'Wordpress', percent: '90%'},
+                        {text: 'Joomla', percent: '50%'},
+                        {text: 'Php and MysQl', percent: '85%'}
+                    ]})

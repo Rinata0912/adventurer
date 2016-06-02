@@ -1,0 +1,83 @@
+.accordion
+    width 580px
+    text-align left
+    margin-bottom 8px
+    &:last-of-type
+        margin-bottom 0
+    &_state_open &
+        &__header
+            background-color #ec4848
+        &__button
+            background #ec4848
+            border-color #fff
+            &:after
+                background #fff
+                right -18px
+                width 17px
+        &__sign
+            &:after
+                display none
+        &__text
+            display block
+    &__header
+        background #3f444a
+        position relative
+        height 60px
+        border-radius 2px
+        border 1px solid #bebebe
+    &__title
+        color white
+        font-family OpenSans
+        font-size 16px
+        font-weight 600
+        display block
+        margin-left 20px
+        border-right 1px solid #bebebe
+        height 58px
+        margin-right 58px
+        padding-top 20px
+    &__button
+        display inline-block
+        width 25px
+        height 25px
+        background #afafaf
+        border-radius 50%
+        border 3px solid #6a6d72
+        position absolute
+        text-align center
+        line-height 11px
+        right 14px
+        top 50%
+        transform translateY(-50%)
+        &:after
+            content ''
+            position absolute
+            height 6px
+            width 18px
+            background #afafaf
+            top 7px
+            right -17px
+    &__sign
+        display inline-block
+        height 2px
+        width 10px
+        background-color white
+        position relative
+        &:after
+            content ''
+            position absolute
+            width 2px
+            height 10px
+            background-color white
+            bottom -4px
+            right 4px
+    &__text
+        display none
+        background-color #f8f8f8
+        border-radius 1px
+        color #323232
+        font-family RobotoCondensed
+        font-size 14px
+        font-weight 400
+        line-height 20px
+        padding 36px 64px 36px 24px

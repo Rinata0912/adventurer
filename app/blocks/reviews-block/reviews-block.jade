@@ -1,0 +1,7 @@
+mixin reviews-block(data)
+    +b.reviews-block
+        +e('img').avatar(src= '/assets/images/' + data.avatar + '.png')
+        +e.content
+            +e.title= data.title
+            +e.subtitle= data.subtitle
+            +e.text= data.text

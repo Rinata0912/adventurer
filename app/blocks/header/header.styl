@@ -1,7 +1,10 @@
 .header
-    display flex
-    justify-content space-between
-    align-items center
+    padding-top 28px
+    padding-bottom 28px
+    &__content
+        display flex
+        justify-content space-between
+        align-items center
     &__title
         color #ec4848
         font-family PTSans
@@ -9,6 +12,9 @@
         font-weight 700
         font-variant small-caps
         text-transform uppercase
+    &__menu
+        display flex
+        align-items center
     &__item
         font-family RobotoCondensed
         font-size 14px
@@ -16,3 +22,9 @@
         text-transform uppercase
         color #3f444a
         text-decoration none
+        margin-right 34px
+        &_active
+            color #ec4848
+    &__loop-icon
+        width 30px
+        height 30px

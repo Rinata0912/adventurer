@@ -1,0 +1,5 @@
+mixin skills(data)
+    +b.skills
+        each item in data.items
+            +e.item
+                +e.progress(style= 'width:' + item.percent)= item.text + ' ' + item.percent

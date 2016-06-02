@@ -1,0 +1,13 @@
+include ../title/title
+include ../button/button
+include ../service-block/block
+include ../wrap/wrap
+
+mixin service()
+    +b.service
+        +wrap()
+            +title({text: 'our Service'})
+            +e.list
+                +block({icon: 'cog', title: 'Free support & updates', text: 'Lorem ipsum dolor sit amet, conse tetuer adipiscing elit, sed diam nonu my nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'})
+                +block({icon: 'pill', title: 'Free support & updates', text: 'Lorem ipsum dolor sit amet, conse tetuer adipiscing elit, sed diam nonu my nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'})
+                +block({icon: 'plug', title: 'Free support & updates', text: 'Lorem ipsum dolor sit amet, conse tetuer adipiscing elit, sed diam nonu my nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'})

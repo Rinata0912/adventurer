@@ -1,0 +1,48 @@
+include ../wrap/wrap
+include ../icon/icon
+
+mixin footer()
+	+b.footer&attributes(attributes)
+		+wrap()
+			+e.container
+				+e.adventurer
+					+e.adventurer-title ADVENTURER
+					+e.adventurer-text It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.
+					+e.adventurer-list
+						+e.adventurer-item
+				+e.features
+					+e.title Some features
+					+e('ul').features-list
+						+e('li').features-item Lorem ipsum dolor sit amet
+						+e('li').features-item Aliquam tincidunt cons ectetuer
+						+e('li').features-item Vestibulum auctor dapibus con
+						+e('li').features-item Lorem ipsum dolor sit amet auctor dapibus
+				+e.tags
+					+e.title Tags
+					+e.tags-list
+						+e.tag corporate
+						+e.tag agency
+						+e.tag portfolio
+						+e.tag blog
+						+e.tag elegant
+						+e.tag professional
+						+e.tag business
+				+e.posts
+					+e.title Flicker Posts
+					+e.posts-list
+						+e('a').post(href='#')
+							+e('img').post-img(src='/assets/images/post1.jpg')
+						+e('a').post(href='#')
+							+e('img').post-img(src='/assets/images/post2.jpg')
+						+e('a').post(href='#')
+							+e('img').post-img(src='/assets/images/post3.jpg')
+						+e('a').post(href='#')
+							+e('img').post-img(src='/assets/images/post4.jpg')
+						+e('a').post(href='#')
+							+e('img').post-img(src='/assets/images/post5.jpg')
+						+e('a').post(href='#')
+							+e('img').post-img(src='/assets/images/post6.jpg')
+						+e('a').post(href='#')
+							+e('img').post-img(src='/assets/images/post7.jpg')
+						+e('a').post(href='#')
+							+e('img').post-img(src='/assets/images/post8.jpg')

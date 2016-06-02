@@ -1,0 +1,12 @@
+include ../icon/icon
+
+mixin works-item(data)
+	+b.works-item&attributes(attributes)
+		+e.img(style='background-image: url(/assets/images/'+data.img+'.jpg)')
+			+e.overlay
+				+e('a').circle(href="#")
+					+icon('zoom').zoom
+				+e('a').circle(href="#")
+					+icon('link').link
+		+e.name= data.name
+		+e.text= data.text
