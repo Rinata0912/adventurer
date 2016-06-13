@@ -1,10 +1,16 @@
 .offers-block
-    width 500px
+    max-width 500px
     display flex
     text-align left
     margin-bottom 64px
     &:nth-last-of-type(-n+2)
         margin-bottom 0
+        @media (max-width 1200px)
+            margin-bottom 30px
+    @media (max-width 1200px)
+        margin-bottom 30px
+        &:last-of-type
+            margin-bottom 0
     &__icon-container
         background #ec4848
         display inline-block
@@ -15,6 +21,10 @@
         margin-right 30px
         flex-shrink 0
         margin-top 6px
+        @media (max-width 992px)
+            width 60px
+            height 60px
+            margin-top 4px
     &__icon
         width 46px
         height 39px
@@ -22,6 +32,9 @@
         top 50%
         left 50%
         transform translate(-50%,-50%)
+        @media (max-width 992px)
+            width 34px
+            height 27px
     &__content
         display inline-block
         vertical-align top
@@ -32,9 +45,15 @@
         font-weight 700
         text-transform uppercase
         margin-bottom 20px
+        @media (max-width 992px)
+            margin-bottom 6px
+            font-size 20px
     &__text
         color #5c6873
         font-family RobotoCondensed
         font-size 18px
         font-weight 300
         line-height 25px
+        @media (max-width 992px)
+            font-size 16px
+            line-height 20px

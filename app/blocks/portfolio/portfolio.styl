@@ -4,15 +4,24 @@
 	padding-bottom 50px
 	border-bottom 1px solid #ebebeb
 	margin-bottom 48px
+	@media(max-width 992px)
+		border-bottom none
+		margin-bottom 0
+		padding-top 30px
+		padding-bottom 30px
 	&__item
 		text-decoration none
 		filter grayscale(100%)
 		transition filter .5s
+		@media(max-width 992px)
+			filter none
 		&:hover
 			filter grayscale(0)
 	&__list
 		display flex
 		justify-content space-between
+		@media(max-width 759px)
+			justify-content space-around
 	&__name
 		color #292626
 		font-family "Myriad Pro"
@@ -20,7 +29,13 @@
 		font-weight 400
 		display inline-block
 		vertical-align middle
+		@media(max-width 992px)
+			font-size 20px
+		@media(max-width 759px)
+			display none
 	&__icon
 		display inline-block
 		vertical-align middle
 		height 41px
+		@media(max-width 992px)
+			height 30px

@@ -3,3 +3,21 @@
 	background-size cover
 	padding-top 58px
 	padding-bottom 68px
+	@media (max-width 1200px)
+		padding-top 40px
+		padding-bottom 20px
+	&__col
+		flex-basis 25%
+		max-width 25%
+		@media (max-width 1200px)
+			max-width 50%
+			flex-basis 50%
+		@media (max-width 606px)
+			max-width 100%
+			flex-basis 100%
+	&__content
+		display flex
+		justify-content space-between
+		flex-wrap wrap
+		@media (max-width 1200px)
+			justify-content space-around

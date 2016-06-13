@@ -6,6 +6,9 @@
 	&__container
 		display flex
 		justify-content space-between
+		@media(max-width 768px)
+			flex-direction column
+			align-items center
 	&__copyright
 		font-family OpenSans
 		font-size 14px
@@ -13,6 +16,9 @@
 		line-height 19px
 		color #c5c5c5
 		display inline-block
+		@media(max-width 768px)
+			margin-bottom 20px
+			text-align center
 	&__link
 		color #ec4848
 		text-decoration none
@@ -25,3 +31,9 @@
 		display inline-block
 		text-decoration none
 		display inline-block
+		margin-right 20px
+		transition color .3s
+		&:hover
+			color #ec4848
+		&:last-of-type
+			margin-right 0

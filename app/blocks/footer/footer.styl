@@ -3,6 +3,8 @@
 	background-color #151515
 	padding-top 56px
 	padding-bottom 68px
+	@media (max-width 1200px)
+		display none
 	&__title
 		color white
 		font-family Roboto
@@ -42,10 +44,16 @@
 			text-align center
 			padding-top 16px
 			margin-right 5px
+			border 1px solid #e2e2e2
+			box-shadow inset 0 0 7px rgba(0, 0, 0, 0.08)
+			transition color .3s
 			&:last-of-type
 				margin-right 0
+			&:hover
+				color #ec4848
+				cursor pointer
 		&-icon
-			width 8px
+			width 15px
 			height 14px
 			display inline-block
 	&__features
@@ -77,10 +85,12 @@
 		text-align left
 		flex 1
 		flex-grow 1
+
 		&-list
 			display flex
 			flex-wrap wrap
 			margin-left 16px
+			margin-right -5px
 	&__tag
 		background-color #ec4848
 		color white
@@ -89,7 +99,7 @@
 		font-weight 400
 		text-transform uppercase
 		display inline-block
-		padding 8px 0
+		padding 8px 5px
 		text-align center
 		margin 0 5px 5px 0
 		flex-grow 1

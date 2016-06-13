@@ -2,7 +2,7 @@ include ../icon/icon
 
 mixin team-item(data)
 	+b.team-item&attributes(attributes)
-		+e('img').photo(src='/assets/images/' + data.photo + '.jpg')
+		+e('img').photo(src='assets/images/' + data.photo + '.jpg')
 		+e.info
 			+e.name= data.name
 			+e.post= data.post

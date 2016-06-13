@@ -4,28 +4,51 @@
     text-align center
     padding-top 266px
     padding-bottom 266px
+    position relative
+    @media (max-width 768px)
+        padding-top 130px
+        padding-bottom 130px
+    &__button
+        position absolute
+        bottom 10%
+        left 50%
+        transform translateX(-50%)
     &__title
         color white
         font-size 90px
         font-weight 700
         font-family OpenSans
         margin-bottom 34px
+        @media (max-width 768px)
+            font-size 40px
+            margin-bottom 16px
         &_small
             font-size 79px
             font-variant small-caps
             margin-bottom 76px
+            @media (max-width 1049px)
+                font-size 70px
+            @media (max-width 768px)
+                font-size 36px
     &__subtitle
         color white
         font-family OpenSans
         font-size 14px
         font-weight 600
         margin-bottom 86px
+        @media (max-width 768px)
+            margin-bottom 28px
         &_big
             font-size 24px
             font-variant small-caps
             margin-bottom 30px
+            @media (max-width 768px)
+                font-size 20px
+                margin-bottom 10px
     &__container
         position relative
+        @media (max-width 1300px)
+            position static
     &__arrow-left
         background-color rgba(255,255,255, .87)
         width 60px
@@ -38,6 +61,11 @@
         cursor pointer
         z-index 1
         transition .3s
+        @media (max-width 1300px)
+            left 20px
+        @media (max-width 768px)
+            width 30px
+            height 30px
     &__arrow-icon
         width 15px
         height 28px
@@ -47,6 +75,9 @@
         left 50%
         transform translate(-50%, -50%)
         transition .3s
+        @media (max-width 768px)
+            width 8px
+            height 14px
     &__arrow-right
         background-color rgba(255,255,255, .87)
         width 60px
@@ -58,6 +89,11 @@
         right -50px
         cursor pointer
         transition .3s
+        @media (max-width 1300px)
+            right 20px
+        @media (max-width 768px)
+            width 30px
+            height 30px
     .slick-disabled
         background-color rgba(0,0,0, .31)
         cursor auto

@@ -1,10 +1,17 @@
 .header
     padding-top 28px
     padding-bottom 28px
+    @media (max-width 768px)
+        padding-bottom 14px
+        padding-top 16px
+    &__loop
+        color #3f444a
     &__content
         display flex
         justify-content space-between
         align-items center
+        @media (max-width 768px)
+            flex-direction column
     &__title
         color #ec4848
         font-family PTSans
@@ -12,9 +19,13 @@
         font-weight 700
         font-variant small-caps
         text-transform uppercase
+        @media (max-width 768px)
+            margin-bottom 6px
     &__menu
         display flex
         align-items center
+        flex-wrap wrap
+        justify-content center
     &__item
         font-family RobotoCondensed
         font-size 14px
@@ -23,6 +34,10 @@
         color #3f444a
         text-decoration none
         margin-right 34px
+        @media (max-width 511px)
+            margin-bottom 10px
+            &:last-of-type
+                margin-bottom 0
         &_active
             color #ec4848
     &__loop-icon
